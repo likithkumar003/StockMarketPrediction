@@ -31,27 +31,27 @@ period = n_years * 365
 #data = load_data(selected_stock)
 #data_load_state.text('Loading data... done!')
 if selected_stock=="GOOG":
-    data=pd.read_csv('GOOG.csv')
+    data=pd.read_csv(r'C:\Users\Asus\Desktop\DoctorManagementSustem\StockMarketPrediction\Test_Dataset\GOOG.csv')
     st.subheader('Raw data')
     st.write(data.tail())
 elif selected_stock=="AAPL":
-    data = pd.read_csv('AAPL(1).csv')
+    data = pd.read_csv(r'C:\Users\Asus\Desktop\DoctorManagementSustem\StockMarketPrediction\Test_Dataset\AAPL(1).csv')
     st.subheader('Raw data')
     st.write(data.tail())
 elif selected_stock=="MSFT":
-    data = pd.read_csv('MSFT1.csv')
+    data = pd.read_csv(r'C:\Users\Asus\Desktop\DoctorManagementSustem\StockMarketPrediction\Test_Dataset\MSFT1.csv')
     st.subheader('Raw data')
     st.write(data.tail())
 elif selected_stock=="GME":
-    data = pd.read_csv('GME1.csv')
+    data = pd.read_csv(r'C:\Users\Asus\Desktop\DoctorManagementSustem\StockMarketPrediction\Test_Dataset\GME1.csv')
     st.subheader('Raw data')
     st.write(data.tail())
 elif selected_stock=="INTC":
-    data = pd.read_csv('INTC.csv')
+    data = pd.read_csv(r'C:\Users\Asus\Desktop\DoctorManagementSustem\StockMarketPrediction\Test_Dataset\INTC.csv')
     st.subheader('Raw data')
     st.write(data.tail())
 elif selected_stock=="NOk":
-    data = pd.read_csv('NOK.csv')
+    data = pd.read_csv(r'C:\Users\Asus\Desktop\DoctorManagementSustem\StockMarketPrediction\Test_Dataset\NOK.csv')
     st.subheader('Raw data')
     st.write(data.tail())
 
