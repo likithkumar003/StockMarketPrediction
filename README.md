@@ -1,4 +1,4 @@
-# 🧠 AI-Powered Legal Assistant
+# 🧠 AI-Powered RAG Assistant
 
 An intelligent Streamlit-based assistant that analyzes multiple PDF documents and answers user queries using a **Retrieval-Augmented Generation (RAG)** pipeline. If the answer isn't found in the provided documents, it **falls back to Gemini (Google GenAI)** for accurate general legal responses.
 
@@ -37,10 +37,18 @@ An intelligent Streamlit-based assistant that analyzes multiple PDF documents an
 ---
 
 ## 📦 Installation
+### Clone
+    git clone https://github.com/your-username/legal-assistant-rag
+### direct to the file
+    cd legal-assistant-rag
+### Env setup
+    python -m venv venv
+    source venv/bin/activate # On Mac  
+    venv\Scripts\activate # On Windows
+### Install Dependencies
+    pip install -r requirements.txt
+### Create a .env file and add your Google API Key:
+    GOOGLE_API_KEY=your_google_api_key_here
+### 🧪 Run the App
+    streamlit run models.py
 
-```bash
-git clone https://github.com/your-username/legal-assistant-rag
-cd legal-assistant-rag
-python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
-pip install -r requirements.txt
